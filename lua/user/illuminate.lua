@@ -49,6 +49,17 @@ function M.config()
     providers_regex_syntax_allowlist = {},
     under_cursor = true,
   }
+
+  -- This block should not be necessarry (and does nothing... why? )? Cause already set to underline in repository ? https://github.com/RRethy/vim-illuminate/blob/master/lua/illuminate.lua
+  -- vim.cmd [[
+  --   hi def IlluminatedWordText guifg=none guibg=none gui=underline
+  --   hi def IlluminatedWordRead guifg=none guibg=none gui=underline
+  --   hi def IlluminatedWordWrite guifg=none guibg=none gui=underline
+  -- ]]
+  -- vim.api.nvim_set_hl(0, 'IlluminatedWord',        { default = true, underline = true }) -- not working ??? see https://github.com/RRethy/vim-illuminate/issues/90 ?
+  -- vim.api.nvim_set_hl(0, 'IlluminatedWordText',        { default = true, underline = true }) -- not working ??? see
+  -- vim.api.nvim_set_hl(0, 'IlluminatedWordRead',        { default = true, underline = true }) -- not working ??? see
+  -- vim.api.nvim_set_hl(0, 'IlluminatedWordWrite',        { default = true, underline = true }) -- not working ??? see
 end
 
 return M

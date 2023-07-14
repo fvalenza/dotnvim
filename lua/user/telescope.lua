@@ -1,3 +1,5 @@
+local opts_keymap = { silent = true }
+
 local M = {
   "nvim-telescope/telescope.nvim",
   commit = "40c31fdde93bcd85aeb3447bb3e2a3208395a868",
@@ -7,6 +9,12 @@ local M = {
     {
       "ahmedkhalf/project.nvim",
     },
+  },
+  keys = {
+    { "<leader>ff", '<cmd>Telescope find_files<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
+    { "<leader>ft", '<cmd>Telescope live_grep<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
+    { "<leader>fp", '<cmd>Telescope projects<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
+    { "<leader>fb", '<cmd>Telescope buffers<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
   },
 }
 

@@ -1,3 +1,5 @@
+local opts_keymap = { silent = true }
+
 local M = {
   "numToStr/Comment.nvim",
   commit = "eab2c83a0207369900e92783f56990808082eac2",
@@ -8,6 +10,12 @@ local M = {
       event = "VeryLazy",
       commit = "729d83ecb990dc2b30272833c213cc6d49ed5214",
     },
+  },
+  keys = {
+    { "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
+    { "<leader>/", "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>", desc = "Todo", mode = "x", opts_keymap }, -- mode = { "n", "v" }
+    { "<C-_>", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", desc = "Todo", mode = "n", opts_keymap }, -- <C-_> is actually <C-/> (ctrl slash)  -- mode = { "n", "v" }
+    { "<C-_>", "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>", desc = "Todo", mode = "x", opts_keymap }, -- mode = { "n", "v" }
   },
 }
 

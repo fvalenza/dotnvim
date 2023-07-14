@@ -1,3 +1,4 @@
+local opts_keymap = { silent = true }
 local M = {
   'stevearc/aerial.nvim',
   opts = {},
@@ -7,8 +8,10 @@ local M = {
      "nvim-tree/nvim-web-devicons"
   },
   cmd = "AerialToggle",
+  keys = {
+    { "<leader>a", '<cmd>AerialToggle<CR>', desc = "Toggle symbols outline", mode = "n", opts_keymap },
+  },
 }
-
 
 
 function M.config()

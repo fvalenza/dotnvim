@@ -15,6 +15,7 @@ local M = {
     { "<leader>ft", '<cmd>Telescope live_grep<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
     { "<leader>fp", '<cmd>Telescope projects<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
     { "<leader>fb", '<cmd>Telescope buffers<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
+    { "<leader>fr", '<cmd>Telescope lsp_document_symbols<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
   },
 }
 

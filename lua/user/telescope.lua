@@ -13,10 +13,12 @@ local M = {
   },
   keys = {
     { "<leader>ff", '<cmd>Telescope find_files<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
-    { "<leader>ft", '<cmd>Telescope live_grep<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
+    { "<leader>fs", '<cmd>Telescope live_grep<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
     { "<leader>fp", '<cmd>Telescope projects<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
     { "<leader>fb", '<cmd>Telescope buffers<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
-    { "<leader>fr", '<cmd>Telescope lsp_document_symbols<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
+    { "<leader>fr", '<cmd>Telescope lsp_document_symbols<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" } -- a comparer a aerial ou symbols-outline
+    { "<leader>fR", '<cmd>Telescope lsp_references<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" } -- TODO decide which one prefered between telescope leader-fR and leader-gR Trouble and gr lsp directly
+    { "<leader>ps", function() require("telescope.builtin").grep_string({ search = vim.fn.input("Grep > ") }) end , desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" } -- TODO: Apparently no difference with Telescope live_grep. To remove if true
     { "<leader>fy", '<cmd>Telescope neoclip<CR>' , desc = "telescope neoclip", mode = "n", opts_keymap }, -- mode = { "n", "v" } -- TODO: Apparently no difference with Telescope live_grep. To remove if true
   },
 }

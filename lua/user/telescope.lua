@@ -8,6 +8,7 @@ local M = {
   dependencies = {
     {
       "ahmedkhalf/project.nvim",
+      "AckslD/nvim-neoclip.lua",
     },
   },
   keys = {
@@ -16,6 +17,7 @@ local M = {
     { "<leader>fp", '<cmd>Telescope projects<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
     { "<leader>fb", '<cmd>Telescope buffers<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
     { "<leader>fr", '<cmd>Telescope lsp_document_symbols<CR>', desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
+    { "<leader>fy", '<cmd>Telescope neoclip<CR>' , desc = "telescope neoclip", mode = "n", opts_keymap }, -- mode = { "n", "v" } -- TODO: Apparently no difference with Telescope live_grep. To remove if true
   },
 }
 
@@ -37,5 +39,7 @@ M.opts = {
     },
   },
 }
+
+require('telescope').load_extension("neoclip")
 
 return M

@@ -51,3 +51,14 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
     end
   end,
 })
+
+
+-- Highlight trailing whitespace for all files except Markdown
+vim.cmd([[
+  augroup TrailingWhitespace
+    autocmd!
+    autocmd BufWinEnter,WinEnter * if &filetype !=# 'markdown' | highlight link ExtraWhitespace Error | match ExtraWhitespace /\s\+$/ | endif
+    autocmd InsertEnter * match ExtraWhitespace /\s\+$/
+    autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+  augroup END
+]])

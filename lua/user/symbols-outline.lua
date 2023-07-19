@@ -5,7 +5,7 @@ local M = {
   event = "VeryLazy",
   cmd = "SymbolsOutline",
   keys = {
-    { "<leader>A", '<cmd>SymbolsOutline<CR>', desc = "Toggle symbols outline", mode = "n", opts_keymap },
+    { "<leader>a", '<cmd>SymbolsOutline<CR>', desc = "Toggle symbols outline", mode = "n", opts_keymap },
   },
 }
 

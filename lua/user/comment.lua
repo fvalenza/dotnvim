@@ -12,10 +12,11 @@ local M = {
     },
   },
   keys = {
-    { "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", desc = "Todo", mode = "n", opts_keymap }, -- mode = { "n", "v" }
-    { "<leader>/", "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>", desc = "Todo", mode = "x", opts_keymap }, -- mode = { "n", "v" }
     { "<C-_>", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", desc = "Todo", mode = "n", opts_keymap }, -- <C-_> is actually <C-/> (ctrl slash)  -- mode = { "n", "v" }
-    { "<C-_>", "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>", desc = "Todo", mode = "x", opts_keymap }, -- mode = { "n", "v" }
+    { "<C-_>", "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>", desc = "Todo", mode = "x", opts_keymap }, -- mode = { "n", "v" }    { "<A-_>", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", desc = "Todo", mode = "n", opts_keymap }, -- <C-_> is actually <C-/> (ctrl slash)  -- mode = { "n", "v" }
+    { "<A-/>", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", desc = "Todo", mode = "n", opts_keymap }, -- <C-_> is actually <C-/> (ctrl slash)  -- mode = { "n", "v" }
+    { "<A-/>", "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>", desc = "Todo", mode = "x", opts_keymap }, -- mode = { "n", "v" }
+
   },
 }
 

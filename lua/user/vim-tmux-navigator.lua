@@ -1,3 +1,12 @@
+-- If no vim-tmux-navigator  is installed, map these keybind so that they works inside neovim windows only.
+
+-- Better window navigation inside neovim in case tmux navigator not loaded... should i test require and define them only is nok ?
+-- keymap("n", "<C-h>", "<C-w>h", opts)
+-- keymap("n", "<C-j>", "<C-w>j", opts)
+-- keymap("n", "<C-k>", "<C-w>k", opts)
+-- keymap("n", "<C-l>", "<C-w>l", opts)
+
+
 local M = {
   "christoomey/vim-tmux-navigator",
   -- commit = "f5d970d4506f385b29534252d8c15a782fa53034",

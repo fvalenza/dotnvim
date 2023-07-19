@@ -1,7 +1,29 @@
+-- If the keymaps do not work here, add them to keymaps.lua
+-- keymap("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts)
+-- keymap("n", "<leader>dc", "<cmd>lua require'dap'.continue()<cr>", opts)
+-- keymap("n", "<leader>di", "<cmd>lua require'dap'.step_into()<cr>", opts)
+-- keymap("n", "<leader>do", "<cmd>lua require'dap'.step_over()<cr>", opts)
+-- keymap("n", "<leader>dO", "<cmd>lua require'dap'.step_out()<cr>", opts)
+-- keymap("n", "<leader>dr", "<cmd>lua require'dap'.repl.toggle()<cr>", opts)
+-- keymap("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<cr>", opts)
+-- keymap("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<cr>", opts)
+-- keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
+
 local M = {
   "mfussenegger/nvim-dap",
   commit = "6b12294a57001d994022df8acbe2ef7327d30587",
   event = "VeryLazy",
+  keys = {
+    { "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", desc = "Toggle breakpoint", mode = "n", opts_keymap },
+    { "<leader>dc", "<cmd>lua require'dap'.continue()<cr>", desc = "Continue", mode = "n", opts_keymap },
+    { "<leader>di", "<cmd>lua require'dap'.step_into()<cr>", desc = "Step into", mode = "n", opts_keymap },
+    { "<leader>do", "<cmd>lua require'dap'.step_over()<cr>", desc = "Step over", mode = "n", opts_keymap },
+    { "<leader>dO", "<cmd>lua require'dap'.step_out()<cr>", desc = "Step out", mode = "n", opts_keymap },
+    { "<leader>dr", "<cmd>lua require'dap'.rep.toggle()<cr>", desc = "Toggle interpreter", mode = "n", opts_keymap },
+    { "<leader>dl", "<cmd>lua require'dap'.run_last()<cr>", desc = "run last", mode = "n", opts_keymap },
+    { "<leader>du", "<cmd>lua require'dapui'.toggle()<cr>", desc = "Toggle dapui", mode = "n", opts_keymap },
+    { "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", desc = "Terminate", mode = "n", opts_keymap },
+  },
 }
 
 function M.config()

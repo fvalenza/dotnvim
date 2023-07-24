@@ -23,7 +23,7 @@ local M = {
     keys = {
         { "<S-l>", "<cmd>BufferNext<cr>", desc = "Goto Next Buffer", mode = "n", opts_keymap },
         { "<S-h>", "<cmd>BufferPrevious<cr>", desc = "Goto Previous Buffer", mode = "n", opts_keymap },
-        { "<C-q>", "<cmd>BufferClose<cr>", desc = "Goto Previous Buffer", mode = "n", opts_keymap },
+        { "<C-q>", "<cmd>BufferClose<cr>", desc = "Close current Buffer", mode = "n", opts_keymap },
     }
 }
 

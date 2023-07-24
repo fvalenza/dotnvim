@@ -1,5 +1,6 @@
 local M = {}
 
+-- LSP servers to force install
 M.servers = {
   "lua_ls",
   "cssls",

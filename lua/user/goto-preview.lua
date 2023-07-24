@@ -2,11 +2,11 @@ local M = {
   "rmagatti/goto-preview",
   -- commit = "19aad0f41f47affbba1274f05e3c067e6d718e1e",
   keys = {
-    { "gpd", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", desc = "Todo", mode = "n"},
-    { "gpt", "<cmd>lua require('goto-preview').goto_preview_type_definition()<CR>", desc = "Todo", mode = "n"},
-    { "gpi", "<cmd>lua require('goto-preview').goto_preview_implementation()<CR>", desc = "Todo", mode = "n"},
-    { "gP", "<cmd>lua require('goto-preview').close_all_win()<CR>", desc = "Todo", mode = "n"},
-    { "gpr", "<cmd>lua require('goto-preview').goto_preview_references()<CR>", desc = "Todo", mode = "n"},
+    { "gpd", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", desc = "GoToPreview Definition", mode = "n"},
+    { "gpt", "<cmd>lua require('goto-preview').goto_preview_type_definition()<CR>", desc = "GoToPreview Type definition", mode = "n"},
+    { "gpi", "<cmd>lua require('goto-preview').goto_preview_implementation()<CR>", desc = "GoToPreview Implementation", mode = "n"},
+    { "gP", "<cmd>lua require('goto-preview').close_all_win()<CR>", desc = "GoToPreview Close Windows", mode = "n"},
+    { "gpr", "<cmd>lua require('goto-preview').goto_preview_references()<CR>", desc = "GoToPreview References", mode = "n"},
   },
 }
 

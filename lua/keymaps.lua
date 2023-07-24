@@ -20,9 +20,18 @@ vim.g.maplocalleader = " "
 
 vim.keymap.set("n", "<Esc>", ":nohl<CR>:echo<CR>")
 
+keymap("n", "Q", "<nop>")
+
 -- From insert to normal mode
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
+
+keymap("n", "<leader>q", "<cmd>q<cr>")
+keymap("n", "<C-a>", "<cmd>gg<S-v>G")
+
+-- Better mapping to go to start/end of line 
+keymap("n", "H", "^")
+keymap("n", "L", "$")
 
 -- Alternativernative way to save and exit in Normal mode.
 -- NOTE: Adding `redraw` helps with `cmdheight=0` if buffer is not modified
@@ -149,3 +158,7 @@ vim.api.nvim_set_keymap('n', 'c.', '/\\V\\C<C-r>"<CR>cgn<C-a><Esc>', { noremap =
 
 -- Git
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts) -- should open repo in smerge ? or have all methods in sublime text -> merge ? at least open repo + File history is nice to have
+
+-- ToggleTerm
+keymap("n", "<leader>tt","<cmd>ToggleTerm direction=float<cr>", {desc = "Toggle Terminal"} )
+keymap("t", "<leader>tt","<C-\\><C-n><C-w>l", {desc = "Toggle Terminal"} ) -- Warning: does not CLOSE the term, just hide it

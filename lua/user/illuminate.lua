@@ -26,7 +26,7 @@ function M.config()
       "treesitter",
       "regex",
     },
-    delay = 200,
+    delay = 300,
     filetypes_denylist = {
       "dirvish",
       "fugitive",

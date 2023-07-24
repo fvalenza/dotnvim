@@ -5,11 +5,9 @@ local M = {
   dependencies = { "nvim-lua/plenary.nvim" },
   cmd = {
     "TodoTrouble",
-    "TodoTelescope",
   },
-  keys = { -- TODO: choose one ?
+  keys = {
     { "<leader>T", '<cmd>TodoTrouble<CR>', desc = "TODOs trouble", mode = "n", opts_keymap },
-    -- { "<leader>T", '<cmd>TodoTelescope<CR>', desc = "TODOs telescope", mode = "n", opts_keymap },
   },
 }
 

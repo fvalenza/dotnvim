@@ -18,10 +18,10 @@ local M = {
     "TmuxNavigatePrevious",
   },
   keys = {
-    { "<C-h>", '<cmd>TmuxNavigateLeft<CR>', desc = "Toggle split Maximization", mode = "n", opts_keymap },
-    { "<C-j>", '<cmd>TmuxNavigateDown<CR>', desc = "Toggle split Maximization", mode = "n", opts_keymap },
-    { "<C-k>", '<cmd>TmuxNavigateUp<CR>', desc = "Toggle split Maximization", mode = "n", opts_keymap },
-    { "<C-l>", '<cmd>TmuxNavigateRight<CR>', desc = "Toggle split Maximization", mode = "n", opts_keymap },
+    { "<C-h>", '<cmd>TmuxNavigateLeft<CR>', desc = "Navigate left pane/window", mode = "n", opts_keymap },
+    { "<C-j>", '<cmd>TmuxNavigateDown<CR>', desc = "Navigate down pane/window", mode = "n", opts_keymap },
+    { "<C-k>", '<cmd>TmuxNavigateUp<CR>', desc = "Navigate up pane/window", mode = "n", opts_keymap },
+    { "<C-l>", '<cmd>TmuxNavigateRight<CR>', desc = "Navigate right pane/window", mode = "n", opts_keymap },
   },
 }
 

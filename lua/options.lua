@@ -52,7 +52,7 @@ vim.opt.timeoutlen = 300                     -- time to wait for a mapped sequen
 vim.opt.updatetime = 100                     -- time (in milliseconds) to wait for events to trigger, used to speed up completion
 vim.opt.numberwidth = 4                      -- minimal number of columns to use for the line number (default 4)
 vim.opt.wrap = false                         -- display lines as one long line
-vim.opt.scrolloff = 8                        -- minimal number of screen lines to keep above and below the cursor
+vim.opt.scrolloff = 15                       -- minimal number of screen lines to keep above and below the cursor
 vim.opt.sidescrolloff = 8                    -- minimal number of screen columns to keep to the left and right of the cursor if wrap is `false`
 vim.opt.guifont = "monospace:h17"            -- the font used in graphical Neovim applications
 vim.opt.fillchars.eob = " "                  -- show empty lines at the end of a buffer as ` ` (default `~`)
@@ -69,4 +69,4 @@ vim.opt.mouse = "a"                          -- allow the mouse to be used in Ne
 vim.opt.isfname:append("@-@")                -- add '@' and '-' as valid characters for a filename
 
 -- If you decide to enable system clipboard support, uncomment the following line:
-vim.opt.clipboard = "unnamedplus"            -- allows Neovim to access the system clipboard
+-- vim.opt.clipboard = "unnamedplus"            -- allows Neovim to access the system clipboard

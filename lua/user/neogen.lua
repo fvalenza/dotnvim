@@ -15,9 +15,6 @@ local M = {
     },
   },
   cmd = { "Neogen" },
-  -- keys = {
-  --   { "<leader>a", '<cmd>AerialToggle<CR>', desc = "Toggle symbols outline", mode = "n", opts_keymap },
-  -- },
 }
 
 

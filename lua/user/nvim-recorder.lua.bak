@@ -1,0 +1,26 @@
+-- In neovim, one can do: qq .... q  qnd then Q to replay.
+-- So no need for this plugin to have "better keybindings"
+-- But this plugins is nice to have to switch macro slots still using "q"
+-- or to edit macros wih "cq"
+-- To decide later if i need to reintegrate it.
+return {
+	"chrisgrieser/nvim-recorder",
+	dependencies = "rcarriga/nvim-notify",
+	keys = {
+		-- these must match the keys in the mapping config below
+		{ "q", desc = " Start Recording" },
+		{ "Q", desc = " Play Recording" },
+	},
+	config = function()
+		require("recorder").setup({
+			mapping = {
+                startStopRecording = "q",
+                playMacro = "Q",
+                -- switchSlot = "<C-q>",
+                editMacro = "cq",
+                yankMacro = "yq",
+                addBreakPoint = "##", -- ⚠️ this should be a string you don't use in insert mode during a macro
+            },
+		})
+	end,
+}

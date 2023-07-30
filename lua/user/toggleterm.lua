@@ -2,6 +2,10 @@ local M = {
   "akinsho/toggleterm.nvim",
   commit = "19aad0f41f47affbba1274f05e3c067e6d718e1e",
   event = "VeryLazy",
+  keys = {
+    { "<leader>tt", '<cmd>ToggleTerm direction=float<cr>', desc = "oggle Terminal", mode = "n", opts_keymap },
+    { "<leader>tt", '<C-\\><C-n><C-w>l', desc = "oggle Terminal", mode = "t", opts_keymap }, -- Warning: does not CLOSE the term, just hide it
+  },
 }
 
 function M.config()

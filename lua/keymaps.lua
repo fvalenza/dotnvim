@@ -134,6 +134,8 @@ keymap("n", "<leader>Y", [["+Y]]) -- yank til end of line (same as yg_)
 
 keymap({"n", "v"}, "<leader>p", [["+p]])
 keymap({"n", "v"}, "<leader>P", [["+P]])
+
+keymap("n", "1", "A <ESC>p")
 ------------------------------------------------------------------------------------------
 -- Reselect latest changed, put, or yanked text
 -- map('n', 'gV', '"`[" . strpart(getregtype(), 0, 1) . "`]"', { expr = true, replace_keycodes = false, desc = 'Visually select changed text' })
